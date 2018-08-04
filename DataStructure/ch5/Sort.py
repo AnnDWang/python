@@ -86,7 +86,7 @@ def mergeSort(alist):
             alist[k]=lefthalf[i]
             i=i+1
             k=k+1
-        while j>len(righthalf):
+        while j<len(righthalf):
             alist[k]=righthalf[j]
             j=j+1
             k=k+1
@@ -137,5 +137,5 @@ def partition(alist,first,last):
    return rightmark
 
 
-quickSort(alist)
+mergeSort(alist)
 print(alist)
